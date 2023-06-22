@@ -4,3 +4,14 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/greeting',
+        destination: '/greeting/index.html', // Ganti dengan rute Next.js yang sesuai
+      },
+    ];
+  },
+};
